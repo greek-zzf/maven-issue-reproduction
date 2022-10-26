@@ -9,6 +9,7 @@ rm -rf apache-maven-*
 # maven 打包
 mvn clean package -Dmaven.test.skip=true -Drat.skip=true
 
+
 # 解压打包好的 zip 包
 unzip apache-maven/target/apache-maven-$version-bin.zip -d .
 
